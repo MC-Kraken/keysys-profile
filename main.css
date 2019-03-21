@@ -1213,8 +1213,29 @@ element.style {
     text-decoration: none;
 }
 
-.round-img {
-    height: 500px;
-    width: 500px;
+.circle {
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+}
+
+.round-img {
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    position: absolute;
+    left: 50%;
+    top: 75%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.images {
+    width: 99.8vw;
+    height: -100px;
 }
